@@ -23,17 +23,12 @@ app.get ('/register', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/register.html'))
 })
 
-/* Envío la respuesta al completar el formulario del register */
-app.post ('/register', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/home.html'))
-})
-
 /* Indico cuando se mostrará el login de mi página */
 app.get ('/login', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/login.html'))
 })
 
-/* Envío la respuesta al completar el formulario del login */
-app.post ('/login', (req, res) => {
+/* Redirecciono al home al completar el formulario del register y del login */
+app.post ('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/home.html'))
 })

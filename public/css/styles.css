@@ -128,7 +128,7 @@ body {
     width: 100%;
 }
 
-/* COLOCANDO UN ANCHO AL BANNER PRINCIPAL PARA QUE NO ME AFECTE MIS DISEÑOS MOBILE DE MOMENTO */
+/* BANNER PRINCIPAL */
 .banner-principal {
     width: 100vw;
 }
@@ -193,6 +193,12 @@ main {
     right: 8%;
     top: -1rem;
     color: var(--verde);
+    transition: transform 750ms;
+}
+
+/* CUANDO SE PASA EL MOUSE POR ENCIMA DEL ÍCONO DE CADA PRODUCTO DEL MAIN */
+.info-product i:hover {
+    transform: rotateZ(-90deg);
 }
 
 /* DIV QUE CONTIENE AL PRECIO Y AL DESCUENTO */
@@ -231,45 +237,67 @@ main {
     color: var(--gris-oscuro);
 }
 
+/* CUANDO EL MOUSE PASE POR ENCIMA DEL PRODUCTO, DESPLEGARÁ LA DESCRIPCIÓN DE ÉSTE */
+.product:hover .product-description {
+    display: block;
+}
+
 /* ------------------   FOOTER    ------------------*/
 
 .main-footer {
     background-color: #ffffff;
     border: 4px solid var(--gris-claro);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 /* TODOS LOS ARTICLE DEL FOOTER */
 .main-footer article{
-    font-size: 0.75rem;
-    text-align: center;
+    width: 100%;
     margin: 2.75rem auto;
+}
+
+/* LOS DIVS DENTRO DE LOS ARTICLE DEL FOOTER */
+.inside-div-footer {
+    width: 100%;
+    text-align: center;
+    margin: auto;
     max-width: 15.625rem;
 }
 
 /* TODOS LOS ÍCONOS DE LOS ARTICLES DEL FOOTER */
-.main-footer article i {
+.inside-div-footer i{
     font-size: 1.625rem;
     color: var(--celeste);
-    margin-bottom: 0.625rem;
+    margin-bottom: 0.625rem;   
+    transition: color 450ms;
+}
+
+/* CUANDO SE PASA EL MOUSE POR ENCIMA DE LOS ÍCONOS DE LOS ARTICLES DEL FOOTER */
+.inside-div-footer i:hover {
+    color: var(--azul);
 }
 
 /* TODOS LOS H4 DE LOS ARTICLES DEL FOOTER */
-.main-footer article h4 {
+.inside-div-footer h4 {
     font-size: 1rem;
     color: var(--gris-oscuro);
-    margin: 0;
+    margin: 0; 
 }
 
 /* TODOS LOS PÁRRAFOS DE LOS ARTICLES DEL FOOTER */
-.main-footer article p {
+.inside-div-footer p {
     font-size: 0.75rem;
     color: var(--gris-oscuro);
-    margin: 0;
+    margin: 0;   
 }
 
 /* EL ARTICLE DEL COPYRIGHT EN EL FOOTER */
 .main-footer .copyright {
-    margin: 0 0 1rem 0.5rem 
+    width: 100%;
+    margin: 0 0 1rem 0.5rem;
+    font-size: 0.75rem;
 }
 
 /* ------------------   REGISTER & LOGIN   ------------------*/
@@ -352,6 +380,12 @@ button {
     border-radius: 5px;
     padding: 0.625rem 0;
     font-size: 1rem;
+    transition: background-color 450ms;
+}
+
+/* CUANDO EL MOUSE ESTÁ ENCIMA DEL BOTÓN DE ENVIAR */
+button:hover {
+    background-color: #0022AA;
 }
 
 /* FEEDBACK DEL FORMULARIO */
@@ -415,14 +449,19 @@ button {
 
     /* ARTÍCULOS DE CADA SECCIÓN DEL MAIN */
     .product {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 48%;
+        transition: box-shadow 450ms;
+    }
+
+    /* CUANDO SE PASA EL MOUSE POR ENCIMA DE LOS ARTÍCULOS DE CADA SECCIÓN DEL MAIN */
+    .product:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
     /* LA DESCRIPCIÓN DE CADA PRODUCTO DEL MAIN */
-    .product-description {
+    /* .product-description {
         display: block;
-    }
+    } */
 
 }
 
@@ -435,4 +474,12 @@ button {
     .product {
         width: 22%;
     }
+    
+    /* --------  FOOTER  -------- */
+
+    /* TODOS LOS ARTICLE DEL FOOTER */
+    .main-footer article{
+        width: 33%;
+}
+
 }
