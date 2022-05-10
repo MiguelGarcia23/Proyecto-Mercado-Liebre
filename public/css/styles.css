@@ -33,31 +33,46 @@ body {
     /* display: block; */
     /* width: 9.375rem; */
     padding-right: 0.5rem;
+    padding-left: 0.5rem;
     width: 50%;
+}
+
+.logo img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 17.25rem;
 }
 
 /* DIV DE LA BARRA DE BÚSQUEDA */
 .search-bar {
     width: 50%;
-    background-color: #ffffff;
-    border-radius: 5px;
-    padding: 0.625rem 0.25rem 0.625rem 0.625rem;
-    display: flex;
-    flex-wrap: nowrap;
     max-height: 2.5rem;
     max-width: 13.75rem;
+    position: relative;
 }
 
-/* MENSAJE DENTRO DE LA BARRA DE BÚSQUEDA */
-.search-bar p {
-/*     display: inline-block;
-    font-size: 0.9375rem;
-    padding-right: 1em;
+/* INPUT DE LA BARRA DE BÚSQUEDA */
+.search-bar input{
+    width: 100%;
     background-color: #ffffff;
-    border: 1px solid #000000;
-    border-radius: 2px;
-    color: var(--gris-oscuro);
-    margin-left: 1.125rem; */
+    border: none;
+    border-radius: 5px;
+    padding: 0.625rem 0.25rem 0.625rem 0.625rem;
+}
+
+/* DIV QUE CONTIENE EL LABEL Y EL ÍCONO DE LA BARRA DE BÚSQUEDA */
+.inside-search-bar {
+    position: absolute;
+    width: 90%;
+    top: 25%;
+    left: 0.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* LABEL DE LA BARRA DE BÚSQUEDA */
+.inside-search-bar label {
     font-size: 0.9375rem;
     color: var(--gris-oscuro);
     white-space: nowrap;
@@ -68,14 +83,7 @@ body {
 }
 
 /* ÍCONO DE BÚSQUEDA */
-.search-bar i {
-/*     display: inline-block;
-    font-size: 1rem;
-    background-color: var(--gris-claro);
-    border: 1px solid #000000;
-    padding: 0.125em 0.125em;
-    border-radius: 3px;
-    text-align: center; */
+.inside-search-bar a i {
     font-size: 0.9375rem;
     color: var(--gris-oscuro);
     padding-left: 5px;
@@ -173,15 +181,6 @@ main {
 
 /* ÍCONO DE CADA PRODUCTO DEL MAIN */
 .info-product i {
-/*     display: block;
-    font-size: 1rem;
-    width: 1.875rem;
-    height: 1.875rem;
-    border: 1px solid var(--verde);
-    padding-top: 0.375rem;
-    border-radius: 50%;
-    text-align: center;
-    color: var(--verde); */
     display: block;
     font-size: 1rem;
     padding: 0.3125em;
@@ -271,6 +270,102 @@ main {
 /* EL ARTICLE DEL COPYRIGHT EN EL FOOTER */
 .main-footer .copyright {
     margin: 0 0 1rem 0.5rem 
+}
+
+/* ------------------   REGISTER & LOGIN   ------------------*/
+.main-register-login {
+    margin-top: 1rem;
+}
+
+/* TODOS LOS DIVS DEL FORMULARIO */
+.parts-form {
+    max-width: 43.125rem;
+    margin: auto;
+    margin-bottom: 2.5rem;
+}
+
+/* LOS DIVS QUE CONTIENEN UN INPUT CON UN RECTÁNGULO NORMAL */
+.normal-input {
+    position: relative;
+}
+
+/* LOS LABEL DE LOS INPUTS RECTANGULARES */
+.label-inside {
+    position: absolute;
+    top: 25%;
+    left: 1rem;
+    font-size: 0.875rem;
+    color: var(--gris-oscuro);
+}
+
+/* LOS INPUT DE LOS DIV CON CLASE NORMAL-INPUT */
+.normal-input input {
+    width: 100%;
+    padding: 0.625rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: var(--gris-oscuro);
+}
+
+/* LOS DIVS QUE CONTIENEN UN INPUT QUE NO ES RECTANGULAR Y EL DIV DE LA FECHA */
+.special-input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* LOS LABEL DE LOS INPUT CON CLASE SPECIAL-INPUT */
+.title-special-input {
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* LOS INPUTS DE TIPO RADIO DEL FORMULARIO */
+.special-input label input[type="radio"]{
+    margin-right: 1rem;
+}
+
+/* LOS LABELS DE LOS INPUTS DE TIPO CHECKBOX DEL FORMULARIO */
+.option-checkbox{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/* LOS INPUTS DE TIPO CHECKBOX */
+.option-checkbox input {
+    margin: 0 1rem
+}
+
+/* LOS BOTONES DE ENVIAR Y BORRAR */
+button {
+    display: block;
+    width: 100%;
+    max-width: 43.125rem;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 1rem;
+    background-color: var(--celeste);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.625rem 0;
+    font-size: 1rem;
+}
+
+/* FEEDBACK DEL FORMULARIO */
+.feedback {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    background-color: rgb(251, 138, 138);
+    color: red;
+    font-size: 1rem;
+    /* padding: 1rem 0; */
+    text-align: center;
 }
 
 /* ------------------   MEDIA QUERIES    ------------------*/

@@ -13,7 +13,27 @@ app.use (express.static('public'));
 /* Levanto mi servidor */
 app.listen(8000, () => console.log('Servidor funcionando en http://localhost:8000'))
 
-/* Indico qué se mostrará en la home de mi página */
+/* Indico cuando me mostrará el home de mi página */
 app.get ('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '/views/home.html'))
+})
+
+/* Indico cuando se mostrará el register de mi página */
+app.get ('/register', (req, res) => {
+    res.sendFile(path.join(__dirname, '/views/register.html'))
+})
+
+/* Envío la respuesta al completar el formulario del register */
+app.post ('/register', (req, res) => {
+    res.sendFile(path.join(__dirname, '/views/home.html'))
+})
+
+/* Indico cuando se mostrará el login de mi página */
+app.get ('/login', (req, res) => {
+    res.sendFile(path.join(__dirname, '/views/login.html'))
+})
+
+/* Envío la respuesta al completar el formulario del login */
+app.post ('/login', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/home.html'))
 })
