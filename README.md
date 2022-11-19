@@ -34,6 +34,12 @@ _Instalar todas las dependencias necesarias_
 npm install
 ```
 
+_Colocar en funcionamiento el servidor_
+
+```
+npm start
+```
+
 ## Construido con 🛠️
 
 _Menciona las herramientas que utilizaste para crear tu proyecto_
