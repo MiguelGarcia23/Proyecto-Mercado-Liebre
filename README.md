@@ -2,7 +2,7 @@
 
 _Proyecto de Digital House de Mercado Liebre_
 
-_Link de la página:_ **http://mercadoliebre-miguel-garcia.herokuapp.com/**
+* _Link de la página:_ **http://mercadoliebre-miguel-garcia.herokuapp.com/**
 
 ## Comenzando 🚀
 
