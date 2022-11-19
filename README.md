@@ -1,6 +1,6 @@
 # Mercado Liebre
 
-_Proyecto de Digital House de Mercado Liebre_
+_Proyecto de Digital House de Mercado Liebre. El objetivo era trabajar en el front-end de la página y realizar una página similar a Mercado Libre pero con detalles propios._
 
 * _Link de la página:_ **http://mercadoliebre-miguel-garcia.herokuapp.com/**
 
