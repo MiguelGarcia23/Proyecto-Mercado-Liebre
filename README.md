@@ -1,92 +1,48 @@
-# Proyecto-Mercado-Liebre
-Proyecto de Digital House de Mercado Liebre
+# Mercado Liebre
 
-# Título del Proyecto
+_Proyecto de Digital House de Mercado Liebre_
 
-_Acá va un párrafo que describa lo que es el proyecto_
+_Link de la página:_ **http://mercadoliebre-miguel-garcia.herokuapp.com/**
 
 ## Comenzando 🚀
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-Mira **Deployment** para conocer como desplegar el proyecto.
-
-
 ### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
-
-```
-Da un ejemplo
-```
+_Tener instalado en tu ordenador el sistema de gestión de paquetes [NPM](https://www.npmjs.com/)_
 
 ### Instalación 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+_Serie de secuencias paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
 
-_Dí cómo será ese paso_
-
-```
-Da un ejemplo
-```
-
-_Y repite_
+_Inicializar un repositorio local en git_
 
 ```
-hasta finalizar
+git init
 ```
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
-
-## Ejecutando las pruebas ⚙️
-
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
+_Clonar este repositorio_
 
 ```
-Da un ejemplo
+git clone https://github.com/MiguelGarcia23/Proyecto-Mercado-Liebre
 ```
 
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
+_Instalar todas las dependencias necesarias_
 
 ```
-Da un ejemplo
+npm install
 ```
-
-## Despliegue 📦
-
-_Agrega notas adicionales sobre como hacer deploy_
 
 ## Construido con 🛠️
 
 _Menciona las herramientas que utilizaste para crear tu proyecto_
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
-
-## Autores ✒️
-
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
-
-## Licencia 📄
-
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
+* ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+* ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+* ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+* ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+* ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 
 ---
-⌨️ con ❤️ por [Miguel García](https://github.com/MiguelGarcia23) 😊
+⌨️ con ❤️ por 🐺[Miguel García](https://github.com/MiguelGarcia23)
